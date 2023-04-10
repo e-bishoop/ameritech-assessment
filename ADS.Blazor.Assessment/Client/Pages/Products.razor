@@ -1,0 +1,37 @@
+﻿@page "/Products"
+
+
+<!--INTENDED FORMAT FOR PRODUCT TABLE VIEW-->
+
+
+<PageTitle>Index</PageTitle>
+<h1>My Third Heading</h1>
+<p>My third paragraph.</p>
+
+<select name="Categories">
+    <!---foreach ITEM IN CATEGORIES{->
+            <option></option>
+            <!---}->
+</select>
+
+
+<table class="">
+    <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Size</th>
+                <th>Inventory Ct.</th>
+            </tr>
+    </thead>
+    <tbody>
+        <!--foreach ITEM IN DATABASE{-->
+        <tr>
+            <td><!--name--></td>
+            <td><!--price--></td>
+            <td><!--size--></td>
+            <td><!--inventory--></td>
+        </tr>
+        <!--}-->
+    </tbody>
+</table>
