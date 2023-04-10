@@ -8,4 +8,4 @@ I was able to interact with the database successfully using ProductController an
 My intention was to use a foreach loop in the razor file paired with a dropdown menu to sort items based on their category to facilitate the product display. A series of nicely formatted inputs would be used to create new entries. I would use a simple regex string to validate the entry (something like ^[\w- ]{1,256} to match any alphanumeric character, dash, or space up to 256 characters long, then only read in up to 256 characters to prevent buffer overflow, for name and category. ^\d{1,10}.\d{2}? would work for price; similarly, something like ^\d{1,256} for count), and convert that data into ProductDto/CategoryDto followed by adding it to the database when a submit button is pressed.
 
 
-I have created some mockups of the GUI in a browser application called Moqups, which are attached in this folder.
+I have created some mockups of the GUI in a browser application called Moqups: Homepage.png, Productview.png, and ManageProductview.png.
