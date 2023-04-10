@@ -1,0 +1,11 @@
+I apologize that I was unable to get functioning code running. While I am familiar with C#, GUI design in general, and have a general understanding of networking, the specific implementation used in the code escaped me, and I had some difficulties finding tutorials online that matched the approach. Since it doesn't work outright, I wanted to detail the parts I don't know, as well as my intended design, so you have a good idea of where my current knowledge base lies.
+
+The major issue, and the reason pretty much none of what I _can_ do is visible, is that I could not determine how to use a controller to interact with the GUI across the server. I think this could have been me not knowing on which side certain files should be placed (I've operated with the assumption that controllers are server-side and views are client-side) but boils down to not having a solid understanding of the nuances in implementation between online examples and the assessment here. I think if 
+I were able to nail down the necessary structure, I would be able to do the rest easily.
+
+I was able to interact with the database successfully using ProductController and DbSet to read data, and am confident I could do the same for creating/updating if I was not struggling with view/controller portions. I also understand the general format of the razor code to populate a table with a list of variables. 
+
+My intention was to use a foreach loop in the razor file paired with a dropdown menu to sort items based on their category to facilitate the product display. A series of nicely formatted inputs would be used to create new entries. I would use a simple regex string to validate the entry (something like ^[\w- ]{1,256} to match any alphanumeric character, dash, or space up to 256 characters long, then only read in up to 256 characters to prevent buffer overflow, for name and category. ^\d{1,10}.\d{2}? would work for price; similarly, something like ^\d{1,256} for count), and convert that data into ProductDto/CategoryDto followed by adding it to the database when a submit button is pressed.
+
+
+I have created some mockups of the GUI in a browser application called Moqups, which are attached in this folder.
